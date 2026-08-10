@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "title_fa": "طراحی کانسپت", "title_en": "Concept design", "desc_fa": "ایده‌ی فضایی اولیه برای یک پروژه‌ی جدید، از نیاز تا دیاگرام.", "desc_en": "Initial spatial concept for a new project, from brief to diagram." },
+    { "title_fa": "پلان و مستندات BIM", "title_en": "Plans & BIM documentation", "desc_fa": "مدل‌سازی کامل در رویت — پلان، برش، نقشه‌ی اجرایی.", "desc_en": "Full Revit modeling — plans, sections, construction drawings." },
+    { "title_fa": "طراحی داخلی", "title_en": "Interior design", "desc_fa": "چیدمان، متریال و نورپردازی فضاهای داخلی.", "desc_en": "Layout, material and lighting design for interior spaces." },
+    { "title_fa": "طراحی نما", "title_en": "Facade design", "desc_fa": "طراحی نما و پوسته‌ی ساختمان.", "desc_en": "Elevation and building envelope design." },
+    { "title_fa": "ویژوالایز و رندر سه‌بعدی", "title_en": "3D visualization & rendering", "desc_fa": "رندر فتورئال از پروژه برای ارائه یا تأیید.", "desc_en": "Photoreal renders of your project for presentation or approval." },
+    { "title_fa": "مشاوره‌ی طراحی", "title_en": "Design consultation", "desc_fa": "یک جلسه برای بررسی یا راهنمایی روی پروژه‌ی موجود.", "desc_en": "A single session to review or advise on an existing project." }
+  ]
+}
