@@ -1,0 +1,90 @@
+backend:
+  name: github
+  repo: enoruziarchitecture-stack/enoruziarchitecture-stack.github.io
+  branch: main
+  base_url: https://YOUR-WORKER-URL.workers.dev
+  auth_endpoint: auth
+
+media_folder: "content/uploads"
+public_folder: "/content/uploads"
+
+locale: "en"
+
+collections:
+
+  - name: "projects"
+    label: "کارها (Projects)"
+    files:
+      - name: "projects"
+        label: "لیست پروژه‌ها"
+        file: "content/projects.json"
+        fields:
+          - label: "پروژه‌ها"
+            name: "items"
+            widget: "list"
+            summary: "{{sheetNo}} — {{title_fa}}"
+            fields:
+              - {label: "شماره شیت (مثلاً A-01)", name: "sheetNo", widget: "string"}
+              - label: "دسته‌بندی"
+                name: "category"
+                widget: "select"
+                options:
+                  - {label: "طراحی نقشه", value: "plan"}
+                  - {label: "طراحی نما", value: "facade"}
+                  - {label: "طراحی داخلی", value: "interior"}
+                  - {label: "BIM", value: "bim"}
+                  - {label: "لندسکیپ", value: "landscape"}
+              - {label: "عکس پروژه", name: "image", widget: "image", required: false}
+              - {label: "عنوان (فارسی)", name: "title_fa", widget: "string"}
+              - {label: "عنوان (English)", name: "title_en", widget: "string"}
+              - {label: "توضیح کوتاه (فارسی)", name: "desc_fa", widget: "text"}
+              - {label: "توضیح کوتاه (English)", name: "desc_en", widget: "text"}
+
+  - name: "journal"
+    label: "ژورنال (Journal)"
+    files:
+      - name: "journal"
+        label: "لیست مطالب"
+        file: "content/journal.json"
+        fields:
+          - label: "مطالب"
+            name: "items"
+            widget: "list"
+            summary: "{{title_fa}}"
+            fields:
+              - {label: "تاریخ (نمایشی، مثلاً 01 — 1405)", name: "date", widget: "string"}
+              - {label: "عنوان (فارسی)", name: "title_fa", widget: "string"}
+              - {label: "عنوان (English)", name: "title_en", widget: "string"}
+              - {label: "متن (فارسی)", name: "body_fa", widget: "text"}
+              - {label: "متن (English)", name: "body_en", widget: "text"}
+
+  - name: "services"
+    label: "خدمات (Services)"
+    files:
+      - name: "services"
+        label: "لیست خدمات"
+        file: "content/services.json"
+        fields:
+          - label: "خدمات"
+            name: "items"
+            widget: "list"
+            summary: "{{title_fa}}"
+            fields:
+              - {label: "عنوان (فارسی)", name: "title_fa", widget: "string"}
+              - {label: "عنوان (English)", name: "title_en", widget: "string"}
+              - {label: "توضیح (فارسی)", name: "desc_fa", widget: "text"}
+              - {label: "توضیح (English)", name: "desc_en", widget: "text"}
+
+  - name: "about"
+    label: "درباره من (About)"
+    files:
+      - name: "about"
+        label: "متن درباره من"
+        file: "content/about.json"
+        fields:
+          - {label: "پاراگراف اول (فارسی)", name: "p1_fa", widget: "text"}
+          - {label: "پاراگراف اول (English)", name: "p1_en", widget: "text"}
+          - {label: "پاراگراف دوم (فارسی)", name: "p2_fa", widget: "text"}
+          - {label: "پاراگراف دوم (English)", name: "p2_en", widget: "text"}
+          - {label: "پاراگراف سوم (فارسی)", name: "p3_fa", widget: "text", required: false}
+          - {label: "پاراگراف سوم (English)", name: "p3_en", widget: "text", required: false}
