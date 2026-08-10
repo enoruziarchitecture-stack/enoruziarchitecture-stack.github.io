@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elham Nowroozi Studio — Architecture &amp; Spatial Design</title>
+<meta name="description" content="Elham Nowroozi Studio — architectural design, interiors, facades, landscape and BIM documentation. Space, precisely imagined.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://YOUR-DOMAIN-HERE/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elham Nowroozi Studio — Architecture & Spatial Design">
+<meta property="og:description" content="Architectural design, interiors, facades, landscape and BIM documentation.">
+<meta property="og:image" content="https://YOUR-DOMAIN-HERE/og-cover.jpg">
+<meta property="og:url" content="https://YOUR-DOMAIN-HERE/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111312'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23EDEAE2' stroke-width='1.4'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#111312">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Elham Nowroozi Studio",
+  "description": "Architectural design studio — interiors, facades, landscape and BIM documentation.",
+  "url": "https://YOUR-DOMAIN-HERE/",
+  "sameAs": ["https://instagram.com/elham.nowroozi.studio"]
+}
+</script>
+
+<style>
+  :root{
+    --paper:#111312;
+    --paper-2:#171A19;
+    --ink:#EDEAE2;
+    --ink-70:rgba(237,234,226,.72);
+    --ink-45:rgba(237,234,226,.46);
+    --chrome:#9BA3A0;
+    --chrome-light:#454A48;
+    --emerald:#12B76A;
+    --emerald-dark:#0C8A50;
+    --gold:#C9A24B;
+    --line:#2A2D2B;
+    --line-strong:#3A3E3C;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  html[lang="fa"] body{ font-family:'Vazirmatn', sans-serif; }
+  a{color:inherit; text-decoration:none;}
+  ::selection{background:var(--emerald); color:var(--paper);}
+
+  .mono{font-family:'IBM Plex Mono', monospace; letter-spacing:.04em;}
+  html[lang="fa"] .mono{font-family:'Vazirmatn', sans-serif; letter-spacing:0;}
+  .eyebrow{font-family:'IBM Plex Mono', monospace; font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--emerald);}
+  html[lang="fa"] .eyebrow{font-family:'Vazirmatn', sans-serif; letter-spacing:.02em; font-weight:600;}
+
+  h1,h2,h3{font-family:'Fraunces', serif; font-weight:500; line-height:1.15; letter-spacing:-.01em;}
+  html[lang="fa"] h1, html[lang="fa"] h2, html[lang="fa"] h3{font-family:'Vazirmatn', sans-serif; font-weight:700; letter-spacing:0;}
+
+  .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* 3D scroll background */
+  #bg-canvas{
+    position:fixed; inset:0; z-index:0; width:100%; height:100%;
+    opacity:.5; pointer-events:none;
+  }
+  .page{position:relative; z-index:1;}
+
+  /* NAV */
+  header{position:fixed; top:0; left:0; right:0; z-index:50; padding:20px 0; background:linear-gradient(var(--paper) 55%, transparent);}
+  header .wrap{display:flex; align-items:center; justify-content:space-between; gap:20px;}
+  .brand{display:flex; align-items:center; gap:10px; font-family:'Fraunces', serif; font-size:1rem;}
+  html[lang="fa"] .brand{font-family:'Vazirmatn', sans-serif; font-weight:700;}
+  .brand .mark{width:20px;height:20px; border:1.4px solid var(--chrome); border-radius:50%; position:relative;}
+  .brand .mark::before{content:""; position:absolute; width:1px; height:24px; background:var(--ink); opacity:.5; left:9px; top:-2px;}
+  .brand .mark::after{content:""; position:absolute; height:1px; width:24px; background:var(--ink); opacity:.5; top:9px; left:-2px;}
+
+  nav ul{list-style:none; display:flex; gap:28px;}
+  nav a{font-size:.8rem; letter-spacing:.02em; color:var(--ink-70); position:relative; padding-bottom:3px;}
+  nav a::after{content:""; position:absolute; left:0; bottom:0; width:0; height:2px; background:var(--emerald); transition:width .3s ease;}
+  html[dir="rtl"] nav a::after{left:auto; right:0;}
+  nav a:hover::after{width:100%;}
+  nav a:hover{color:var(--ink);}
+
+  .nav-right{display:flex; align-items:center; gap:16px;}
+  .lang-toggle{
+    font-family:'IBM Plex Mono', monospace; font-size:.72rem; letter-spacing:.04em;
+    border:1px solid var(--chrome); padding:6px 12px; cursor:pointer; background:linear-gradient(180deg,#3A3E3C,#232625); color:var(--ink);
+    transition:background .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .lang-toggle:hover{background:var(--emerald); color:#0B0D0C; border-color:var(--emerald);}
+
+  .nav-toggle{display:none; background:none; border:1px solid var(--chrome); width:36px; height:32px; position:relative; cursor:pointer;}
+  .nav-toggle span, .nav-toggle span::before, .nav-toggle span::after{content:""; position:absolute; left:8px; right:8px; height:1px; background:var(--ink); transition:transform .25s ease, opacity .25s ease;}
+  .nav-toggle span{top:15px;}
+  .nav-toggle span::before{top:-6px;}
+  .nav-toggle span::after{top:6px;}
+  .nav-toggle.open span{background:transparent;}
+  .nav-toggle.open span::before{transform:translateY(6px) rotate(45deg);}
+  .nav-toggle.open span::after{transform:translateY(-6px) rotate(-45deg);}
+
+  @media (max-width:820px){
+    nav ul:not(.lang-list){display:none;}
+    .nav-toggle{display:block;}
+    nav#site-nav{
+      position:fixed; inset:0; background:var(--paper); display:flex; align-items:center; justify-content:center;
+      opacity:0; pointer-events:none; transition:opacity .3s ease;
+    }
+    nav#site-nav.open{opacity:1; pointer-events:auto;}
+    nav#site-nav ul{display:flex !important; flex-direction:column; gap:28px; text-align:center;}
+    nav#site-nav a{font-size:1.3rem; font-family:'Fraunces', serif;}
+    html[lang="fa"] nav#site-nav a{font-family:'Vazirmatn', sans-serif;}
+  }
+
+  /* HERO */
+  .hero{min-height:100svh; display:flex; flex-direction:column; justify-content:center; padding-top:90px;}
+  .hero .wrap{display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center;}
+  @media (max-width:900px){ .hero .wrap{grid-template-columns:1fr;} }
+  .hero h1{font-size:clamp(2.4rem, 6vw, 4.4rem); max-width:13ch;}
+  .hero h1 em{font-style:italic; color:var(--emerald);}
+  html[lang="fa"] .hero h1 em{font-style:normal; color:var(--emerald);}
+  .hero p.lede{margin-top:20px; max-width:42ch; color:var(--ink-70); font-size:1.02rem; line-height:1.7;}
+  .hero-cta{margin-top:30px; display:flex; gap:18px; align-items:center; flex-wrap:wrap;}
+  .btn{font-family:'IBM Plex Mono', monospace; font-size:.78rem; letter-spacing:.05em; padding:13px 22px; border:1px solid var(--emerald); background:var(--emerald); color:#0B0D0C; transition:background .25s ease, color .25s ease, border-color .25s ease; display:inline-block;}
+  html[lang="fa"] .btn{font-family:'Vazirmatn', sans-serif; letter-spacing:0;}
+  .btn:hover{background:transparent; color:var(--emerald-dark);}
+  .btn-ghost{font-family:'IBM Plex Mono', monospace; font-size:.78rem; color:var(--ink-70); border-bottom:1px solid var(--chrome); padding-bottom:2px;}
+  html[lang="fa"] .btn-ghost{font-family:'Vazirmatn', sans-serif;}
+  .btn-ghost:hover{color:var(--emerald-dark); border-color:var(--emerald);}
+
+  .scale-bar{padding:0 0 30px;}
+  .scale-bar .wrap{display:flex; align-items:center; justify-content:space-between; font-size:.7rem; color:var(--ink-45);}
+  .scale-bar .ticks{display:flex; gap:0;}
+  .scale-bar .tick{width:18px; height:6px; border-left:1px solid var(--ink-45);}
+  html[dir="rtl"] .scale-bar .tick{border-left:none; border-right:1px solid var(--ink-45);}
+
+  section{padding:110px 0; position:relative;}
+  .section-head{display:flex; justify-content:space-between; align-items:flex-end; gap:30px; margin-bottom:56px; border-bottom:1px solid var(--line); padding-bottom:24px;}
+  .section-head h2{font-size:clamp(1.8rem, 3.2vw, 2.4rem);}
+  .section-head .num{font-family:'IBM Plex Mono', monospace; font-size:.75rem; color:var(--ink-45); white-space:nowrap;}
+  html[lang="fa"] .section-head .num{font-family:'Vazirmatn', sans-serif;}
+  @media (max-width:700px){ .section-head{flex-direction:column; align-items:flex-start; gap:10px;} }
+
+  /* ABOUT */
+  .about-grid{display:grid; grid-template-columns:.95fr 1.05fr; gap:56px;}
+  @media (max-width:820px){ .about-grid{grid-template-columns:1fr;} }
+  .about-grid p{color:var(--ink-70); line-height:1.8; font-size:1rem; max-width:58ch;}
+  .about-grid p + p{margin-top:16px;}
+  .process{display:grid; grid-template-columns:repeat(2,1fr); gap:0; margin-top:8px;}
+  .step{border-top:1px solid var(--gold); padding:18px 20px 0 0;}
+  html[dir="rtl"] .step{padding:18px 0 0 20px;}
+  .step .step-no{font-family:'IBM Plex Mono', monospace; font-size:.72rem; color:var(--gold);}
+  html[lang="fa"] .step .step-no{font-family:'Vazirmatn', sans-serif;}
+  .step h3{font-size:1rem; margin-top:10px; font-weight:600;}
+  .step p{margin-top:8px; color:var(--ink-70); font-size:.85rem; line-height:1.6;}
+
+  /* WORK */
+  .filters{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:44px;}
+  .filter-btn{
+    font-family:'IBM Plex Mono', monospace; font-size:.74rem; letter-spacing:.03em;
+    padding:9px 16px; border:1px solid var(--chrome-light); background:transparent; color:var(--ink-70); cursor:pointer;
+    transition:all .2s ease;
+  }
+  html[lang="fa"] .filter-btn{font-family:'Vazirmatn', sans-serif;}
+  .filter-btn:hover{border-color:var(--chrome); color:var(--ink);}
+  .filter-btn.active{background:var(--emerald); border-color:var(--emerald); color:#0B0D0C;}
+
+  .work-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:2px; background:var(--line);}
+  @media (max-width:760px){ .work-grid{grid-template-columns:1fr;} }
+  .project{background:var(--paper); padding:34px 30px 30px; position:relative; overflow:hidden; min-height:300px; display:flex; flex-direction:column; justify-content:space-between; transition:background .3s ease;}
+  .project.hidden{display:none;}
+  .project:hover{background:var(--paper-2);}
+  .project-top{display:flex; justify-content:space-between; align-items:flex-start;}
+  .sheet-no{font-family:'IBM Plex Mono', monospace; font-size:.7rem; color:var(--gold);}
+  html[lang="fa"] .sheet-no{font-family:'Vazirmatn', sans-serif;}
+  .cat-tag{font-family:'IBM Plex Mono', monospace; font-size:.66rem; color:var(--ink-45); letter-spacing:.04em; text-transform:uppercase;}
+  html[lang="fa"] .cat-tag{font-family:'Vazirmatn', sans-serif; text-transform:none;}
+  .project h3{font-size:1.4rem; margin-top:50px; max-width:15ch;}
+  .project .desc{margin-top:8px; color:var(--ink-70); font-size:.88rem; max-width:36ch; line-height:1.55;}
+  .project-diagram{position:absolute; right:-10px; bottom:-10px; opacity:.4; pointer-events:none;}
+  html[dir="rtl"] .project-diagram{right:auto; left:-10px;}
+  .project-diagram svg{stroke:var(--ink);}
+
+  /* JOURNAL */
+  .journal-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:34px;}
+  @media (max-width:900px){ .journal-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:620px){ .journal-grid{grid-template-columns:1fr;} }
+  .journal-card{border-top:1px solid var(--gold); padding-top:18px;}
+  .journal-card .jdate{font-family:'IBM Plex Mono', monospace; font-size:.7rem; color:var(--gold);}
+  html[lang="fa"] .journal-card .jdate{font-family:'Vazirmatn', sans-serif;}
+  .journal-card h3{font-size:1.15rem; margin-top:12px; font-weight:600;}
+  .journal-card p{margin-top:10px; color:var(--ink-70); font-size:.88rem; line-height:1.6;}
+  .journal-card .read{display:inline-block; margin-top:14px; font-family:'IBM Plex Mono', monospace; font-size:.75rem; border-bottom:1px solid var(--line-strong);}
+  html[lang="fa"] .journal-card .read{font-family:'Vazirmatn', sans-serif;}
+
+  /* SERVICES / ORDER */
+  .services-grid{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line); margin-bottom:60px;}
+  @media (max-width:760px){ .services-grid{grid-template-columns:1fr;} }
+  .service{background:var(--paper); padding:26px 28px;}
+  .service .s-no{font-family:'IBM Plex Mono', monospace; font-size:.7rem; color:var(--gold);}
+  html[lang="fa"] .service .s-no{font-family:'Vazirmatn', sans-serif;}
+  .service h3{font-size:1.05rem; margin-top:10px; font-weight:600;}
+  .service p{margin-top:8px; font-size:.86rem; color:var(--ink-70); line-height:1.55;}
+
+  .order-form{display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:820px;}
+  @media (max-width:620px){ .order-form{grid-template-columns:1fr;} }
+  .order-form .field{display:flex; flex-direction:column; gap:6px;}
+  .order-form .field.full{grid-column:1 / -1;}
+  .order-form label{font-family:'IBM Plex Mono', monospace; font-size:.68rem; letter-spacing:.05em; color:var(--ink-45); text-transform:uppercase;}
+  html[lang="fa"] .order-form label{font-family:'Vazirmatn', sans-serif; text-transform:none;}
+  .order-form input, .order-form select, .order-form textarea{
+    background:transparent; border:none; border-bottom:1px solid var(--line-strong); padding:10px 2px;
+    font-family:inherit; font-size:.95rem; color:var(--ink); resize:vertical;
+  }
+  .order-form input:focus, .order-form select:focus, .order-form textarea:focus{outline:none; border-color:var(--ink);}
+  .order-form button{
+    grid-column:1 / -1; justify-self:start; margin-top:6px; cursor:pointer;
+    font-family:'IBM Plex Mono', monospace; font-size:.78rem; letter-spacing:.05em;
+    padding:13px 26px; border:1px solid var(--emerald); background:var(--emerald); color:#0B0D0C;
+    transition:background .25s ease, color .25s ease;
+  }
+  html[lang="fa"] .order-form button{font-family:'Vazirmatn', sans-serif;}
+  .order-form button:hover{background:transparent; color:var(--emerald-dark);}
+  .form-note{font-size:.76rem; color:var(--ink-45); margin-top:10px;}
+
+  /* CONTACT */
+  .contact-inner{display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:end;}
+  @media (max-width:820px){ .contact-inner{grid-template-columns:1fr;} }
+  .contact h2{font-size:clamp(1.9rem,4.2vw,3rem); max-width:15ch;}
+  .contact-links{display:flex; flex-direction:column; margin-top:26px;}
+  .contact-links a, .contact-links .row{display:flex; justify-content:space-between; align-items:center; padding:15px 0; border-top:1px solid var(--line); font-size:.98rem;}
+  .contact-links a:last-child, .contact-links .row:last-child{border-bottom:1px solid var(--line);}
+  .contact-links a .arrow{font-family:'IBM Plex Mono', monospace; transition:transform .25s ease;}
+  .contact-links a:hover .arrow{transform:translateX(6px);}
+  html[dir="rtl"] .contact-links a:hover .arrow{transform:translateX(-6px);}
+  .compass{width:110px; height:110px; margin-inline-start:auto;}
+  .compass svg{width:100%; height:100%; stroke:var(--ink);}
+
+  footer{border-top:1px solid var(--line); padding:24px 0;}
+  footer .wrap{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;}
+  footer .mono{font-size:.7rem; color:var(--ink-45);}
+  html[lang="fa"] footer .mono{font-family:'Vazirmatn', sans-serif;}
+
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  .skip-link{position:absolute; left:-999px; top:0; background:var(--ink); color:var(--paper); padding:12px 18px; z-index:100; font-family:'IBM Plex Mono', monospace; font-size:.8rem;}
+  .skip-link:focus{left:16px; top:16px;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--emerald); outline-offset:3px;}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link" data-i18n="skip">Skip to content</a>
+
+<canvas id="bg-canvas"></canvas>
+
+<div class="page">
+<header>
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="mark"></span><span data-i18n="brandName">ELHAM NOWROOZI</span> <span class="mono" style="font-size:.68rem;color:var(--ink-45);" data-i18n="brandSuffix">STUDIO</span></a>
+    <div class="nav-right">
+      <nav id="site-nav">
+        <ul>
+          <li><a href="#about" data-i18n="navAbout">About</a></li>
+          <li><a href="#work" data-i18n="navWork">Work</a></li>
+          <li><a href="#journal" data-i18n="navJournal">Journal</a></li>
+          <li><a href="#order" data-i18n="navOrder">Order a project</a></li>
+          <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="lang-toggle" id="lang-toggle" type="button">FA</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" data-i18n="heroEyebrow">Architecture &amp; Spatial Design</div>
+      <h1 data-i18n-html="heroTitle">Space, <em>precisely</em><br>imagined.</h1>
+      <p class="lede" data-i18n="heroLede">Elham Nowroozi Studio designs interiors, facades and landscapes that begin as a line on a plan and end as a place someone lives in.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn" data-i18n="heroCta1">View selected work</a>
+        <a href="#order" class="btn-ghost" data-i18n="heroCta2">Start a project →</a>
+      </div>
+    </div>
+    <div></div>
+  </div>
+</section>
+<div class="scale-bar">
+  <div class="wrap">
+    <span class="mono">N</span>
+    <div class="ticks" aria-hidden="true"><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div><div class="tick"></div></div>
+    <span class="mono">SCALE 1:100</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 data-i18n="aboutTitle">About</h2>
+      <span class="num mono" data-i18n="aboutNum">SHEET A-00 / ABOUT</span>
+    </div>
+    <div class="about-grid">
+      <div class="reveal" id="about-text"><!-- filled from content/about.json --></div>
+      <div>
+        <div class="process">
+          <div class="step reveal"><div class="step-no mono">01</div><h3 data-i18n="p1t">Concept</h3><p data-i18n="p1d">Site, brief and constraints translated into a spatial diagram.</p></div>
+          <div class="step reveal"><div class="step-no mono">02</div><h3 data-i18n="p2t">Plan &amp; BIM</h3><p data-i18n="p2d">Full modeling in Revit — plans, sections, documentation.</p></div>
+          <div class="step reveal"><div class="step-no mono">03</div><h3 data-i18n="p3t">Material &amp; light</h3><p data-i18n="p3d">Interior and material studies tested against the plan.</p></div>
+          <div class="step reveal"><div class="step-no mono">04</div><h3 data-i18n="p4t">Render &amp; delivery</h3><p data-i18n="p4d">Final visualization and a documentation set.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 data-i18n="workTitle">Work</h2>
+      <span class="num mono" data-i18n="workNum">SAMPLE CONTENT</span>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all" data-i18n="fAll">All</button>
+      <button class="filter-btn" data-filter="plan" data-i18n="fPlan">Plans</button>
+      <button class="filter-btn" data-filter="facade" data-i18n="fFacade">Facade</button>
+      <button class="filter-btn" data-filter="interior" data-i18n="fInterior">Interior</button>
+      <button class="filter-btn" data-filter="bim" data-i18n="fBim">BIM</button>
+      <button class="filter-btn" data-filter="landscape" data-i18n="fLandscape">Landscape</button>
+    </div>
+  </div>
+  <div class="work-grid" id="work-grid"><!-- filled from content/projects.json --></div>
+</section>
+
+<section id="journal">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 data-i18n="journalTitle">Journal</h2>
+      <span class="num mono" data-i18n="journalNum">NOTES ON DESIGN &amp; PRACTICE</span>
+    </div>
+    <div class="journal-grid" id="journal-grid"><!-- filled from content/journal.json --></div>
+  </div>
+</section>
+
+<section id="order" style="background:var(--paper-2);">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 data-i18n="orderTitle">Services &amp; project orders</h2>
+      <span class="num mono" data-i18n="orderNum">START A PROJECT</span>
+    </div>
+    <div class="services-grid" id="services-grid"><!-- filled from content/services.json --></div>
+
+    <form class="order-form" action="https://formspree.io/f/xrpzpggg" method="POST">
+      <div class="field"><label for="o-name" data-i18n="fName">Full name</label><input type="text" id="o-name" name="name" required></div>
+      <div class="field"><label for="o-contact" data-i18n="fContact">Email or phone</label><input type="text" id="o-contact" name="contact" required></div>
+      <div class="field"><label for="o-service" data-i18n="fService">Service needed</label>
+        <select id="o-service" name="service"><!-- filled from content/services.json --></select>
+      </div>
+      <div class="field"><label for="o-area" data-i18n="fArea">Approx. area (m²)</label><input type="text" id="o-area" name="area"></div>
+      <div class="field full"><label for="o-desc" data-i18n="fDesc">Tell me about the project</label><textarea id="o-desc" name="description" rows="4" required></textarea></div>
+      <button type="submit" data-i18n="fSubmit">Send request</button>
+    </form>
+    <p class="form-note" data-i18n="formNote">Form delivery needs a one-time setup — see the setup guide in the project files.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div class="contact-inner">
+      <div>
+        <div class="eyebrow" style="margin-bottom:16px;" data-i18n="contactEyebrow">Get in touch</div>
+        <h2 data-i18n="contactTitle">Have a site, a brief, or just an idea?</h2>
+        <div class="contact-links">
+          <a href="mailto:studio@elhamnowroozi.com"><span>studio@elhamnowroozi.com</span><span class="arrow mono">→</span></a>
+          <div class="row"><span dir="ltr">+98 9__ ___ ____</span><span class="mono" data-i18n="phoneLabel">Phone</span></div>
+          <a href="https://instagram.com/elham.nowroozi.studio" target="_blank" rel="noopener"><span>@elham.nowroozi.studio</span><span class="arrow mono">→</span></a>
+        </div>
+      </div>
+      <div class="compass" aria-hidden="true">
+        <svg viewBox="0 0 120 120" fill="none"><circle cx="60" cy="60" r="52" stroke-width="1"/><path d="M60 14 L68 60 L60 106 L52 60 Z" stroke-width="1"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="mono">© <span id="year"></span> ELHAM NOWROOZI STUDIO</span>
+    <span class="mono" data-i18n="footerNote">DRAWN FOR WEB</span>
+  </div>
+</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ---------- i18n ---------- */
+const translations = {
+  en: {
+    skip:"Skip to content", brandName:"ELHAM NOWROOZI", brandSuffix:"STUDIO",
+    navAbout:"About", navWork:"Work", navJournal:"Journal", navOrder:"Order a project", navContact:"Contact",
+    heroEyebrow:"Architecture & Spatial Design",
+    heroTitle:'Space, <em>precisely</em><br>imagined.',
+    heroLede:"Elham Nowroozi Studio designs interiors, facades and landscapes that begin as a line on a plan and end as a place someone lives in.",
+    heroCta1:"View selected work", heroCta2:"Start a project →",
+    aboutTitle:"About", aboutNum:"SHEET A-00 / ABOUT",
+    aboutP1:"Elham Nowroozi is an architectural designer working across residential and mixed-use projects. [Replace with your full introduction: education, years of experience, and what drew you to architecture.]",
+    aboutP2:"[Replace with a paragraph about your working process — how a project moves from first sketch to final documentation, and what a client can expect from working with you.]",
+    aboutP3:"[Optional: mention notable training, software expertise (Revit, AutoCAD, Enscape), or a philosophy statement.]",
+    p1t:"Concept", p1d:"Site, brief and constraints translated into a spatial diagram.",
+    p2t:"Plan & BIM", p2d:"Full modeling in Revit — plans, sections, documentation.",
+    p3t:"Material & light", p3d:"Interior and material studies tested against the plan.",
+    p4t:"Render & delivery", p4d:"Final visualization and a documentation set.",
+    workTitle:"Work", workNum:"SAMPLE CONTENT",
+    fAll:"All", fPlan:"Plans", fFacade:"Facade", fInterior:"Interior", fBim:"BIM", fLandscape:"Landscape",
+    proj1t:"Elm House — Plan", proj1d:"Residential floor plan, replace with your project title and summary.",
+    proj2t:"Karaj Street Block", proj2d:"Elevation study for a four-storey street frontage.",
+    proj3t:"Apartment 12B — Interior", proj3d:"Material and lighting study for a 95m² apartment.",
+    proj4t:"Apartment 12B — BIM Set", proj4d:"Full Revit documentation set, plan to construction drawings.",
+    proj5t:"Courtyard Garden", proj5d:"A shaded courtyard planned around three existing trees.",
+    journalTitle:"Journal", journalNum:"NOTES ON DESIGN & PRACTICE",
+    j1date:"01 — 2026", j1t:"Reading a plan like an architect", j1d:"A short guide to the symbols and conventions on a residential floor plan. [Replace with your article, or link it to a full post.]",
+    j2date:"02 — 2026", j2t:"Why BIM changes how you design", j2d:"Notes on moving from 2D AutoCAD drafting to full Revit modeling. [Replace with your article.]",
+    j3date:"03 — 2026", j3t:"Choosing materials for small interiors", j3d:"A practical approach to material selection on a limited budget. [Replace with your article.]",
+    readMore:"Read more →",
+    orderTitle:"Services & project orders", orderNum:"START A PROJECT",
+    s1t:"Concept design", s1d:"Initial spatial concept for a new project, from brief to diagram.",
+    s2t:"Plans & BIM documentation", s2d:"Full Revit modeling — plans, sections, construction drawings.",
+    s3t:"Interior design", s3d:"Layout, material and lighting design for interior spaces.",
+    s4t:"Facade design", s4d:"Elevation and building envelope design.",
+    s5t:"3D visualization & rendering", s5d:"Photoreal renders of your project for presentation or approval.",
+    s6t:"Design consultation", s6d:"A single session to review or advise on an existing project.",
+    fName:"Full name", fContact:"Email or phone", fService:"Service needed", fArea:"Approx. area (m²)", fDesc:"Tell me about the project", fSubmit:"Send request",
+    formNote:"Form delivery needs a one-time setup — see the setup guide in the project files.",
+    contactEyebrow:"Get in touch", contactTitle:"Have a site, a brief, or just an idea?", phoneLabel:"Phone",
+    footerNote:"DRAWN FOR WEB"
+  },
+  fa: {
+    skip:"رفتن به محتوا", brandName:"الهام نوروزی", brandSuffix:"استودیو",
+    navAbout:"درباره من", navWork:"کارها", navJournal:"ژورنال", navOrder:"سفارش پروژه", navContact:"ارتباط با من",
+    heroEyebrow:"طراحی معماری و فضایی",
+    heroTitle:'فضا، <em>دقیقاً</em><br>تصور شده.',
+    heroLede:"استودیو الهام نوروزی فضاهای داخلی، نما و لندسکیپ طراحی می‌کند؛ از یک خط روی پلان شروع می‌شود و به مکانی برای زندگی ختم می‌شود.",
+    heroCta1:"مشاهده نمونه‌کارها", heroCta2:"شروع یک پروژه ←",
+    aboutTitle:"درباره من", aboutNum:"شیت A-00 / درباره",
+    aboutP1:"الهام نوروزی، طراح معماری با تمرکز بر پروژه‌های مسکونی و مختلط. [این بخش را با معرفی کامل خودت جایگزین کن: تحصیلات، سابقه‌ی کاری و علاقه‌ات به معماری.]",
+    aboutP2:"[این پاراگراف را با توضیح روند کاری‌ات جایگزین کن — یک پروژه چطور از طرح اولیه تا نقشه‌ی نهایی پیش می‌رود و مشتری چه انتظاری باید داشته باشد.]",
+    aboutP3:"[اختیاری: به مهارت‌های نرم‌افزاری (رویت، اتوکد، Enscape) یا فلسفه‌ی کاری‌ات اشاره کن.]",
+    p1t:"کانسپت", p1d:"سایت، نیاز مشتری و محدودیت‌ها به یک دیاگرام فضایی تبدیل می‌شود.",
+    p2t:"پلان و BIM", p2d:"مدل‌سازی کامل در رویت — پلان، برش، مستندات.",
+    p3t:"متریال و نور", p3d:"مطالعه‌ی متریال و نورپردازی، هماهنگ با پلان.",
+    p4t:"رندر و تحویل", p4d:"ویژوالایز نهایی و مجموعه‌ی مستندات پروژه.",
+    workTitle:"کارها", workNum:"محتوای نمونه",
+    fAll:"همه", fPlan:"طراحی نقشه", fFacade:"طراحی نما", fInterior:"طراحی داخلی", fBim:"BIM", fLandscape:"لندسکیپ",
+    proj1t:"خانه الم — پلان", proj1d:"پلان مسکونی، این بخش را با عنوان و توضیح پروژه‌ی خودت جایگزین کن.",
+    proj2t:"بلوک خیابان کرج", proj2d:"مطالعه‌ی نمای یک بلوک چهارطبقه.",
+    proj3t:"آپارتمان ۱۲B — داخلی", proj3d:"مطالعه‌ی متریال و نور برای آپارتمان ۹۵ متری.",
+    proj4t:"آپارتمان ۱۲B — مجموعه BIM", proj4d:"مستندات کامل رویت، از پلان تا نقشه‌ی اجرایی.",
+    proj5t:"باغ حیاط", proj5d:"حیاطی سایه‌دار، طراحی‌شده حول سه درخت موجود.",
+    journalTitle:"ژورنال", journalNum:"یادداشت‌هایی درباره طراحی و حرفه",
+    j1date:"۰۱ — ۱۴۰۵", j1t:"خواندن پلان مثل یک معمار", j1d:"راهنمای کوتاهی بر نمادها و قراردادهای پلان مسکونی. [این را با مقاله‌ی خودت جایگزین کن.]",
+    j2date:"۰۲ — ۱۴۰۵", j2t:"چرا BIM روش طراحی را عوض می‌کند", j2d:"یادداشت‌هایی درباره‌ی گذار از اتوکد دوبعدی به مدل‌سازی کامل رویت.",
+    j3date:"۰۳ — ۱۴۰۵", j3t:"انتخاب متریال برای فضاهای کوچک", j3d:"یک رویکرد عملی برای انتخاب متریال با بودجه‌ی محدود.",
+    readMore:"ادامه مطلب ←",
+    orderTitle:"خدمات و سفارش پروژه", orderNum:"شروع یک پروژه",
+    s1t:"طراحی کانسپت", s1d:"ایده‌ی فضایی اولیه برای یک پروژه‌ی جدید، از نیاز تا دیاگرام.",
+    s2t:"پلان و مستندات BIM", s2d:"مدل‌سازی کامل در رویت — پلان، برش، نقشه‌ی اجرایی.",
+    s3t:"طراحی داخلی", s3d:"چیدمان، متریال و نورپردازی فضاهای داخلی.",
+    s4t:"طراحی نما", s4d:"طراحی نما و پوسته‌ی ساختمان.",
+    s5t:"ویژوالایز و رندر سه‌بعدی", s5d:"رندر فتورئال از پروژه برای ارائه یا تأیید.",
+    s6t:"مشاوره‌ی طراحی", s6d:"یک جلسه برای بررسی یا راهنمایی روی پروژه‌ی موجود.",
+    fName:"نام و نام‌خانوادگی", fContact:"ایمیل یا شماره تماس", fService:"خدمت موردنیاز", fArea:"متراژ تقریبی (متر مربع)", fDesc:"درباره‌ی پروژه‌ت بگو", fSubmit:"ارسال درخواست",
+    formNote:"ارسال فرم نیاز به یک تنظیم اولیه دارد — راهنمای راه‌اندازی را در فایل‌های پروژه ببین.",
+    contactEyebrow:"ارتباط با من", contactTitle:"سایت، ایده یا پروژه‌ای در ذهن داری؟", phoneLabel:"تماس",
+    footerNote:"طراحی‌شده برای وب"
+  }
+};
+
+function applyLanguage(lang){
+  const html = document.getElementById('html-root');
+  html.setAttribute('lang', lang);
+  html.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
+  document.getElementById('lang-toggle').textContent = lang === 'fa' ? 'EN' : 'FA';
+  const dict = translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    if(dict[key] !== undefined) el.textContent = dict[key];
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>{
+    const key = el.getAttribute('data-i18n-html');
+    if(dict[key] !== undefined) el.innerHTML = dict[key];
+  });
+  localStorage.setItem('site-lang', lang);
+}
+
+function detectInitialLanguage(){
+  const saved = localStorage.getItem('site-lang');
+  if(saved) return saved;
+  const nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
+  return nav.startsWith('fa') ? 'fa' : 'en';
+}
+
+let currentLang = detectInitialLanguage();
+
+/* ---------- reveal on scroll (shared observer, used by static + dynamic content) ---------- */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ---------- CMS-driven content (content/*.json, edited from /admin) ---------- */
+const categoryLabelKey = { plan:'fPlan', facade:'fFacade', interior:'fInterior', bim:'fBim', landscape:'fLandscape' };
+const diagramByCategory = {
+  plan: '<rect x="10" y="10" width="120" height="120" stroke-width="1" fill="none"/><line x1="70" y1="10" x2="70" y2="130" stroke-width="1"/>',
+  facade: '<rect x="20" y="20" width="30" height="100" stroke-width="1" fill="none"/><rect x="60" y="20" width="30" height="100" stroke-width="1" fill="none"/><rect x="100" y="20" width="20" height="100" stroke-width="1" fill="none"/>',
+  interior: '<rect x="15" y="15" width="110" height="110" stroke-width="1" fill="none"/><line x1="15" y1="70" x2="125" y2="70" stroke-width="1"/>',
+  bim: '<rect x="15" y="15" width="110" height="110" stroke-width="1" fill="none"/><line x1="70" y1="15" x2="70" y2="125" stroke-width="1"/>',
+  landscape: '<circle cx="45" cy="45" r="18" stroke-width="1" fill="none"/><circle cx="95" cy="60" r="14" stroke-width="1" fill="none"/><circle cx="60" cy="100" r="16" stroke-width="1" fill="none"/>'
+};
+
+let cmsData = { projects:[], journal:[], services:[], about:null };
+
+async function loadCmsData(){
+  try{
+    const [p, j, s, a] = await Promise.all([
+      fetch('content/projects.json').then(r=>r.json()).catch(()=>({items:[]})),
+      fetch('content/journal.json').then(r=>r.json()).catch(()=>({items:[]})),
+      fetch('content/services.json').then(r=>r.json()).catch(()=>({items:[]})),
+      fetch('content/about.json').then(r=>r.json()).catch(()=>null)
+    ]);
+    cmsData.projects = p.items || [];
+    cmsData.journal = j.items || [];
+    cmsData.services = s.items || [];
+    cmsData.about = a;
+  }catch(err){ console.error('Content load failed', err); }
+}
+
+function renderAbout(){
+  const el = document.getElementById('about-text');
+  if(!el || !cmsData.about) return;
+  const a = cmsData.about;
+  const suf = currentLang === 'fa' ? '_fa' : '_en';
+  const paras = [a['p1'+suf], a['p2'+suf], a['p3'+suf]].filter(Boolean);
+  el.innerHTML = paras.map(t=>`<p>${t}</p>`).join('');
+}
+
+function renderProjects(){
+  const grid = document.getElementById('work-grid');
+  if(!grid) return;
+  const isFa = currentLang === 'fa';
+  const activeFilter = (document.querySelector('.filter-btn.active') || {}).getAttribute
+    ? document.querySelector('.filter-btn.active').getAttribute('data-filter') : 'all';
+  grid.innerHTML = cmsData.projects.map(pr=>{
+    const hidden = activeFilter !== 'all' && pr.category !== activeFilter ? ' hidden' : '';
+    const catLabel = translations[currentLang][categoryLabelKey[pr.category]] || pr.category;
+    const img = pr.image ? `<div style="position:absolute;inset:0;background-image:url('${pr.image}');background-size:cover;background-position:center;opacity:.85;"></div>` : '';
+    const diagram = pr.image ? '' : `<div class="project-diagram" aria-hidden="true"><svg width="130" height="130" viewBox="0 0 140 140">${diagramByCategory[pr.category]||''}</svg></div>`;
+    return `<div class="project reveal in" data-cat="${pr.category}"${hidden ? ' style="display:none"' : ''}>
+      ${img}
+      <div class="project-top" style="position:relative;"><span class="sheet-no">${pr.sheetNo||''}</span><span class="cat-tag">${catLabel}</span></div>
+      <div style="position:relative;"><h3>${isFa ? pr.title_fa : pr.title_en}</h3><p class="desc">${isFa ? pr.desc_fa : pr.desc_en}</p></div>
+      ${diagram}
+    </div>`;
+  }).join('');
+}
+
+function renderJournal(){
+  const grid = document.getElementById('journal-grid');
+  if(!grid) return;
+  const isFa = currentLang === 'fa';
+  const readMore = translations[currentLang].readMore;
+  grid.innerHTML = cmsData.journal.map(j=>`
+    <div class="journal-card reveal in">
+      <div class="jdate mono">${j.date||''}</div>
+      <h3>${isFa ? j.title_fa : j.title_en}</h3>
+      <p>${isFa ? j.body_fa : j.body_en}</p>
+      <span class="read">${readMore}</span>
+    </div>`).join('');
+}
+
+function renderServices(){
+  const grid = document.getElementById('services-grid');
+  const select = document.getElementById('o-service');
+  if(!grid) return;
+  const isFa = currentLang === 'fa';
+  grid.innerHTML = cmsData.services.map((s,i)=>`
+    <div class="service">
+      <span class="s-no mono">${String(i+1).padStart(2,'0')}</span>
+      <h3>${isFa ? s.title_fa : s.title_en}</h3>
+      <p>${isFa ? s.desc_fa : s.desc_en}</p>
+    </div>`).join('');
+  if(select){
+    select.innerHTML = cmsData.services.map(s=>`<option>${isFa ? s.title_fa : s.title_en}</option>`).join('');
+  }
+}
+
+function renderAllDynamicContent(){
+  renderAbout();
+  renderProjects();
+  renderJournal();
+  renderServices();
+}
+
+async function initSite(){
+  applyLanguage(currentLang);
+  await loadCmsData();
+  renderAllDynamicContent();
+}
+initSite();
+
+document.getElementById('lang-toggle').addEventListener('click', ()=>{
+  currentLang = currentLang === 'fa' ? 'en' : 'fa';
+  applyLanguage(currentLang);
+  renderAllDynamicContent();
+});
+
+/* ---------- year ---------- */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ---------- mobile nav ---------- */
+const navToggle = document.getElementById('nav-toggle');
+const siteNav = document.getElementById('site-nav');
+navToggle.addEventListener('click', ()=>{
+  const isOpen = siteNav.classList.toggle('open');
+  navToggle.classList.toggle('open', isOpen);
+  navToggle.setAttribute('aria-expanded', isOpen);
+});
+siteNav.querySelectorAll('a').forEach(a=>{
+  a.addEventListener('click', ()=>{
+    siteNav.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded','false');
+  });
+});
+
+/* ---------- work filters ---------- */
+document.getElementById('filters').addEventListener('click', (e)=>{
+  const btn = e.target.closest('.filter-btn');
+  if(!btn) return;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const f = btn.getAttribute('data-filter');
+  document.querySelectorAll('#work-grid .project').forEach(p=>{
+    p.style.display = (f !== 'all' && p.getAttribute('data-cat') !== f) ? 'none' : '';
+  });
+});
+
+/* ---------- 3D scroll-linked: 2D plan extrudes into a 3D volume ---------- */
+(function(){
+  // Temporarily disabled — will be re-enabled once a real project model (GLB export from Revit) is ready.
+  const DISABLE_3D_BG = true;
+  const canvas = document.getElementById('bg-canvas');
+  if(DISABLE_3D_BG){ canvas.style.display = 'none'; return; }
+
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isSmall = window.innerWidth < 640;
+  if(prefersReduced){ canvas.style.display = 'none'; return; }
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(42, window.innerWidth/window.innerHeight, 0.1, 100);
+
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha:true, antialias:true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, isSmall ? 1.5 : 2));
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+  const inkColor = 0x17191A;
+  const accentColor = 0x0EA968;
+  const chromeColor = 0x9AA0A6;
+
+  const group = new THREE.Group();
+  scene.add(group);
+
+  // each "building" starts as a flat plan footprint and extrudes upward on scroll
+  const blocks = [];
+  function addBlock(w,fullH,d,x,z,color){
+    const geo = new THREE.BoxGeometry(w, fullH, d);
+    geo.translate(0, fullH/2, 0); // pivot at base, so it grows upward from the ground plan
+    const edges = new THREE.EdgesGeometry(geo);
+    const mat = new THREE.LineBasicMaterial({ color, transparent:true, opacity:.6 });
+    const line = new THREE.LineSegments(edges, mat);
+    line.position.set(x, 0, z);
+    line.scale.y = 0.02; // start almost flat — reads as a 2D plan outline
+    group.add(line);
+    blocks.push({ mesh:line, fullH });
+    return line;
+  }
+
+  addBlock(2.4, 1.6, 2.4, -1.6, 0, inkColor);
+  addBlock(1.5, 2.8, 1.5, 1.3, -0.6, accentColor);
+  addBlock(3.2, 0.8, 1.8, 0, -1, inkColor);
+  addBlock(1.0, 3.6, 1.0, -2.6, 1.2, inkColor);
+
+  // ground grid — the "drafting table" the plan sits on
+  const grid = new THREE.GridHelper(14, 20, chromeColor, chromeColor);
+  grid.material.transparent = true;
+  grid.material.opacity = .16;
+  scene.add(grid);
+
+  // camera path: starts top-down like a 2D floor plan, tilts into a 3D perspective on scroll
+  const topCam = new THREE.Vector3(0, 9.5, 0.4);
+  const angleCam = new THREE.Vector3(0, isSmall ? 3.2 : 2.4, isSmall ? 10 : 8);
+
+  let scrollProgress = 0;
+  let targetRotY = 0;
+
+  function easeOutCubic(t){ return 1 - Math.pow(1 - t, 3); }
+
+  function onScroll(){
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    scrollProgress = max > 0 ? window.scrollY / max : 0;
+    targetRotY = scrollProgress * Math.PI * 1.1;
+  }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  function onResize(){
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  }
+  window.addEventListener('resize', onResize);
+
+  camera.position.copy(topCam);
+  camera.lookAt(0,0,0);
+
+  function animate(){
+    requestAnimationFrame(animate);
+
+    // phase 1 (first ~35% of scroll): plan extrudes into a volume, camera tilts from top-down to 3D
+    const extrude = easeOutCubic(Math.min(scrollProgress / 0.35, 1));
+    blocks.forEach(b=>{
+      const targetScale = 0.02 + extrude * 0.98;
+      b.mesh.scale.y += (targetScale - b.mesh.scale.y) * 0.08;
+    });
+
+    const camTarget = new THREE.Vector3().lerpVectors(topCam, angleCam, extrude);
+    camera.position.lerp(camTarget, 0.06);
+    camera.lookAt(0, 0.6 * extrude, 0);
+
+    // phase 2 (rest of scroll): the finished volume slowly turns
+    group.rotation.y += (targetRotY - group.rotation.y) * 0.06;
+    group.position.y = -Math.max(scrollProgress - 0.35, 0) * 1.6;
+
+    renderer.render(scene, camera);
+  }
+  animate();
+})();
+</script>
+</body>
+</html>
