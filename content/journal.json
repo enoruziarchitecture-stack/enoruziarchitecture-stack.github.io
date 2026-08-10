@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "date": "۰۱ — ۱۴۰۵",
+      "title_fa": "خواندن پلان مثل یک معمار",
+      "title_en": "Reading a plan like an architect",
+      "body_fa": "راهنمای کوتاهی بر نمادها و قراردادهای پلان مسکونی. این را با مقاله‌ی خودت جایگزین کن.",
+      "body_en": "A short guide to the symbols and conventions on a residential floor plan. Replace with your article."
+    },
+    {
+      "date": "۰۲ — ۱۴۰۵",
+      "title_fa": "چرا BIM روش طراحی را عوض می‌کند",
+      "title_en": "Why BIM changes how you design",
+      "body_fa": "یادداشت‌هایی درباره‌ی گذار از اتوکد دوبعدی به مدل‌سازی کامل رویت.",
+      "body_en": "Notes on moving from 2D AutoCAD drafting to full Revit modeling."
+    },
+    {
+      "date": "۰۳ — ۱۴۰۵",
+      "title_fa": "انتخاب متریال برای فضاهای کوچک",
+      "title_en": "Choosing materials for small interiors",
+      "body_fa": "یک رویکرد عملی برای انتخاب متریال با بودجه‌ی محدود.",
+      "body_en": "A practical approach to material selection on a limited budget."
+    }
+  ]
+}
