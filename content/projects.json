@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "sheetNo": "A-01",
+      "category": "plan",
+      "image": "",
+      "title_fa": "خانه الم — پلان",
+      "title_en": "Elm House — Plan",
+      "desc_fa": "پلان مسکونی، این بخش را با عنوان و توضیح پروژه‌ی خودت جایگزین کن.",
+      "desc_en": "Residential floor plan, replace with your project title and summary."
+    },
+    {
+      "sheetNo": "A-02",
+      "category": "facade",
+      "image": "",
+      "title_fa": "بلوک خیابان کرج",
+      "title_en": "Karaj Street Block",
+      "desc_fa": "مطالعه‌ی نمای یک بلوک چهارطبقه.",
+      "desc_en": "Elevation study for a four-storey street frontage."
+    },
+    {
+      "sheetNo": "A-03",
+      "category": "interior",
+      "image": "",
+      "title_fa": "آپارتمان ۱۲B — داخلی",
+      "title_en": "Apartment 12B — Interior",
+      "desc_fa": "مطالعه‌ی متریال و نور برای آپارتمان ۹۵ متری.",
+      "desc_en": "Material and lighting study for a 95m² apartment."
+    },
+    {
+      "sheetNo": "A-04",
+      "category": "bim",
+      "image": "",
+      "title_fa": "آپارتمان ۱۲B — مجموعه BIM",
+      "title_en": "Apartment 12B — BIM Set",
+      "desc_fa": "مستندات کامل رویت، از پلان تا نقشه‌ی اجرایی.",
+      "desc_en": "Full Revit documentation set, plan to construction drawings."
+    },
+    {
+      "sheetNo": "A-05",
+      "category": "landscape",
+      "image": "",
+      "title_fa": "باغ حیاط",
+      "title_en": "Courtyard Garden",
+      "desc_fa": "حیاطی سایه‌دار، طراحی‌شده حول سه درخت موجود.",
+      "desc_en": "A shaded courtyard planned around three existing trees."
+    }
+  ]
+}
