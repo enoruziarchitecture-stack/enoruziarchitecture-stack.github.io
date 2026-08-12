@@ -2,7 +2,7 @@ backend:
   name: github
   repo: enoruziarchitecture-stack/enoruziarchitecture-stack.github.io
   branch: main
-  base_url: https://YOUR-WORKER-URL.workers.dev
+ base_url: https://decap-proxy.elhamnowroozi.workers.dev
   auth_endpoint: auth
 
 media_folder: "content/uploads"
